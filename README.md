@@ -39,10 +39,7 @@ http://localhost:3000/api/v1/medical/diseases/COVID-19/cases/timeline
 http://localhost:3000/api/v1/geo/
 ```
 
-* Continents:
-```
-http://localhost:3000/api/v1/geo/continents
-```
+* Continents: http://localhost:3000/api/v1/geo/continents
 
 * * Countries *by continent*:
 http://localhost:3000/api/v1/geo/continents/AS/countries
