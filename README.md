@@ -1,33 +1,33 @@
-**Help With Covid**
+# Help With Covid
 
-# URL
+## Deployment (`development`)
+1. unzip `vendor/data.zip`
+2. run - `rails db:reset; rails db:migrate; rails db:seed;`
+
+## API
 ```
-http://localhost:3000/
-```
-# API
-```
-http:///localhost:3000/api/v1/
+http://localhost:3000/api/v1/
 ```
 
-## Medical (Diseases, Cases, ...)
+### Medical (Diseases, Cases, ...)
 ```
-http:///localhost:3000/api/v1/medical/
+http://localhost:3000/api/v1/medical/
 ```
-* Diseases (currently `COVID-19`)
+* Diseases (currently *COVID-19*)
 http://localhost:3000/api/v1/medical/diseases
 
-* Cases by total
+* Cases *by total*
 http://localhost:3000/api/v1/medical/diseases/COVID-19/cases/total
 
-* Cases by timeline
+* Cases *by timeline*
 http://localhost:3000/api/v1/medical/diseases/COVID-19/cases/timeline
 
 * Filter data by:
 * * Continent: http://localhost:3000/api/v1/medical/diseases/COVID-19/cases/timeline?continent_id=AS
 * * Country: http://localhost:3000/api/v1/medical/diseases/COVID-19/cases/timeline?country_id=US
 * * Level-1: http://localhost:3000/api/v1/medical/diseases/COVID-19/cases/timeline?country_id=US&level1_id=DC
-* * Date (Range): http://localhost:3000/api/v1/medical/diseases/COVID-19/cases/timeline?from=2020-01-01&to=2020-02-01
-* * Type (Sure, Dead, Heal): http://localhost:3000/api/v1/medical/diseases/COVID-19/cases/timeline?type=sure
+* * Date (*range)*: http://localhost:3000/api/v1/medical/diseases/COVID-19/cases/timeline?from=2020-01-01&to=2020-02-01
+* * Type (*heal*, *sure*, *dead*): http://localhost:3000/api/v1/medical/diseases/COVID-19/cases/timeline?type=heal
 
 #### Sources:
 - COVID-19: 
@@ -38,7 +38,7 @@ http://localhost:3000/api/v1/medical/diseases/COVID-19/cases/timeline
 * Continents
 http://localhost:3000/api/v1/geo/continents
 
-* * Countries
+* * Countries *by continent*
 http://localhost:3000/api/v1/geo/continents/AS/countries
 
 * Countries
