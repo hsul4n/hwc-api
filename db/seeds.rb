@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 if Rails.env.development?
-  path = Rails.root.join('vendor', 'seeds')
+  path = "vendor/data"
   
   connection = ActiveRecord::Base.connection
 
@@ -23,7 +23,7 @@ if Rails.env.development?
 
     unless file == '.' or file == '..' or file == '_'
 
-      p "Inserting from #{file}..."
+      p "Inserting #{file}..."
 
       sql = File.read("#{path}/#{file}")
       statements = sql.split(/;$/)
