@@ -1,6 +1,3 @@
-require 'csv'
-require 'open-uri'
-
 class API::V1::Medical::Disease::CasesController < ApplicationController
   before_action :set_last_case
   before_action -> { Medical::Disease::Case::FetchJob.perform_now(@last_case) }, if: -> { @last_case.date < Date.yesterday }
@@ -26,7 +23,7 @@ class API::V1::Medical::Disease::CasesController < ApplicationController
 
   # GET /api/v1/medical/diseases/1/cases
   # def index
-  #   @cases = Medical::Disease::Case.where(query_params).all
+  #   @cases = Medical::Disease::Case.where(query_params).limit(100).all
   #   render json: @cases
   # end
 

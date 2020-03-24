@@ -1,3 +1,6 @@
+require 'csv'
+require 'open-uri'
+
 class Medical::Disease::Case::FetchJob < ApplicationJob
   queue_as :default
 
