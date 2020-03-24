@@ -13,8 +13,4 @@ class ApplicationRecord < ActiveRecord::Base
       end
     end
   end
-
-  def name
-    SON.parse(self[:name]) rescue self[:name]
-  end
 end
