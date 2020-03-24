@@ -17,9 +17,9 @@ default: &default
 development:
   <<: *default
   username: root
-  password: 7uthaifah
+  password: root
   host: localhost
-  database: data_development
+  database: hwc_api_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -48,7 +48,6 @@ development:
 #
 production:
   <<: *default
-  host: mysql1008.mochahost.com
-  database: mochacdn_data
-  username: mochacdn_hsul4n
-  password: hsul4n2020
+  database: hwc_api_production
+  username: hwc_api
+  password: <%= ENV['HWC_API_DATABASE_PASSWORD'] %>

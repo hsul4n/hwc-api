@@ -41,7 +41,6 @@ class Medical::Disease::Case::FetchJob < ApplicationJob
     last_case_id = last_case.id.first
 
     JHU_DATA.each_with_index do |file, file_index|
-      # data = CSV.parse(open("D:/Docs/MochaCDN/DATA/Medical/.github/CSSEGISandData/COVID-19/#{JHU_PATH}/#{file}.csv"))
       data = CSV.parse(open("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/#{JHU_PATH}/#{file}.csv"))
 
       # dates (header from csv)
