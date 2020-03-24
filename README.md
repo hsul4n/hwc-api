@@ -9,6 +9,7 @@
 http://localhost:3000/api/v1/
 ```
 
+## Modules
 ### Medical (Diseases, Cases, ...)
 ```
 http://localhost:3000/api/v1/medical/
@@ -30,13 +31,18 @@ http://localhost:3000/api/v1/medical/diseases/COVID-19/cases/timeline
 * * Type (*heal*, *sure*, *dead*): http://localhost:3000/api/v1/medical/diseases/COVID-19/cases/timeline?type=heal
 
 #### Sources:
-- COVID-19: 
+- COVID-19 *(Auto collect via `Medical::Disease::Case::FetchJob`)*: 
 - - JHU CSSE: https://github.com/CSSEGISandData/COVID-19
 
 ### Geographic (Continents, Countries, ...)
+```
+http://localhost:3000/api/v1/geo/
+```
 
 * Continents:
+```
 http://localhost:3000/api/v1/geo/continents
+```
 
 * * Countries *by continent*:
 http://localhost:3000/api/v1/geo/continents/AS/countries
