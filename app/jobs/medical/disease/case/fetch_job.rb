@@ -35,7 +35,7 @@ class Medical::Disease::Case::FetchJob < ApplicationJob
   }
 
   # Johns Hopkins University
-  # source: https://github.com/CSSEGISandData
+  # source: https://github.com/CSSEGISandData/COVID-19
   def jhu(last_case)
     countries = Geo::Country.all
     level1s = Geo::Country::Division::Level1.all
