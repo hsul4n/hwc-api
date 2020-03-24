@@ -1,8 +1,8 @@
-# Help With Covid
+# Help With Covid API
 
 ## Deployment (`development`)
 1. unzip `vendor/data.zip`
-2. run - `rails db:reset; rails db:migrate; rails db:seed;`
+2. run `rails db:reset; rails db:migrate; rails db:seed;`
 
 ## API
 ```
