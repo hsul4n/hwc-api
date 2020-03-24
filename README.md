@@ -13,13 +13,13 @@ http://localhost:3000/api/v1/
 ```
 http://localhost:3000/api/v1/medical/
 ```
-* Diseases (currently *COVID-19*)
+* Diseases (currently *COVID-19*):
 http://localhost:3000/api/v1/medical/diseases
 
-* Cases *by total*
+* Cases *by total*:
 http://localhost:3000/api/v1/medical/diseases/COVID-19/cases/total
 
-* Cases *by timeline*
+* Cases *by timeline*:
 http://localhost:3000/api/v1/medical/diseases/COVID-19/cases/timeline
 
 * Filter data by:
@@ -35,19 +35,19 @@ http://localhost:3000/api/v1/medical/diseases/COVID-19/cases/timeline
 
 ### Geographic (Continents, Countries, ...)
 
-* Continents
+* Continents:
 http://localhost:3000/api/v1/geo/continents
 
-* * Countries *by continent*
+* * Countries *by continent*:
 http://localhost:3000/api/v1/geo/continents/AS/countries
 
-* Countries
+* Countries:
 http://localhost:3000/api/v1/geo/countries
 
-* * Levels
+* * Levels:
 http://localhost:3000/api/v1/geo/countries/YE/division/levels
 
-* * Level-1
+* * Level-1:
 http://localhost:3000/api/v1/geo/countries/YE/division/level1
 
 #### Sources:
