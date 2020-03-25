@@ -13,8 +13,8 @@ class Medical::Disease::Case::FetchJob < ApplicationJob
   JHU_DATE_FORMAT = "%m/%d/%y"
   JHU_PATH = "csse_covid_19_data/csse_covid_19_time_series"
   JHU_DATA = [
-    "time_series_covid19_deaths_global",
     "time_series_covid19_confirmed_global",
+    "time_series_covid19_deaths_global",
   ]
   JHU_COUNTRY = {
     "Holy See": "VA",
